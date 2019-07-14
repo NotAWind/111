@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>我的账户</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- logo 开始 -->
+	<div class="container-fluid logoDiv d-flex flex-row justify-content-around align-items-center">
+		<div>
+			<img src="imgs/logo.png"></img>
+		</div>
+		<div>
+			<img src="imgs/cart.gif"></img>
+			<span>&nbsp;&nbsp;<a href="#">购物车</a></span>
+			<span>&nbsp;&nbsp;<a href="#">帮助中心</a></span>
+			<span>&nbsp;&nbsp;<a href="#">我的账户</a></span>
+			<span>&nbsp;&nbsp;<a href="#">新用户注册</a></span>
+		</div>
+	</div>
+	<!-- logo  结束 -->
+	<!-- nav  开始 -->
+	<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">导航栏</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">文学 <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">计算机</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">外语</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">经营</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">励志</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">社科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">学术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">少儿</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">艺术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">原版</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">科技</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">考试</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活百科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">全部商品目录</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="请输入书名" aria-label="Search">
+	      <button class="btn btn-success my-2 my-sm-0" type="submit">搜索</button>
+	    </form>
+	  </div>
+	</nav>
+	<!-- nav  结束 -->
+	<div class="container" style="padding: 20px;">
+		<!-- 面包屑 开始 -->
+		<nav aria-label="breadcrumb" class="float-right">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item active"><a href="#">首页</a></li>
+		    <li class="breadcrumb-item">我的账户</li>
+		    <li class="breadcrumb-item">欢迎</li>
+		  </ol>
+		</nav>
+		<!-- 面包屑 结束 -->
+		<div class="clearfix"></div> <!-- 清除浮动 -->
+		<!-- 正文 开始 -->
+		<div class="row">
+		  <!-- 左菜单 开始 -->
+		  <div class="col-4">
+		    <div class="list-group" id="list-tab" role="tablist">
+		      <a class="list-group-item list-group-item-action list-group-item-light" id="list-change-info" data-toggle="list" href="#change-info" role="tab"><img src="imgs/icon1.png">&nbsp;&nbsp;用户信息修改</a>
+		      <a class="list-group-item list-group-item-action  list-group-item-light" id="list-search-order" data-toggle="list" href="#search-order" role="tab"><img src="imgs/icon2.png">&nbsp;&nbsp;订单查询</a>
+		      <a class="list-group-item list-group-item-action list-group-item-light" href="#"><img src="imgs/icon3.png">&nbsp;&nbsp;用户退出</a>
+		    </div>
+		  </div>
+		  <!-- 左菜单 结束 -->
+		  <!-- 右边 tab-pane 开始 -->
+		  <div class="col-8">
+		    <div class="tab-content" id="nav-tabContent">
+		      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+		      	<img src="imgs/myad.jpg">
+		      </div>
+		      <div class="tab-pane fade pt-3 pb-3" style="background-color: #FCFDEF;" id="change-info" role="tabpanel" aria-labelledby="list-change-info-list">
+		      	<form>
+		      	  <div class="form-group row">
+				    <label for="email" class="col-sm-2 col-form-label text-center">会员邮箱</label>
+				    <div class="col-sm-9">
+				      <input type="email" class="form-control-plaintext" id="email" value="huan9yun@163.com">
+				    </div>
+				  </div>
+	      		  <div class="form-group row">
+				    <label for="userName" class="col-sm-2 col-form-label text-center">会员名</label>
+				    <div class="col-sm-9">
+				      <input type="text" class="form-control-plaintext" id="userName" value="madan">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="password" class="col-sm-2 col-form-label text-center">修改密码</label>
+				    <div class="col-sm-9">
+				      <input type="password"  class="form-control" id="password">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="conformPassword" class="col-sm-2 col-form-label text-center">重复密码</label>
+				    <div class="col-sm-9">
+				      <input type="password" class="form-control" id="conformPassword">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label class="col-sm-2 col-form-label text-center">性别</label>
+				    <div class="col-sm-9 row">
+				      <div class="form-check col-sm-3">
+						  <input class="form-check-input" type="radio" name="sex" id="female" value="option1" checked>
+						  <label class="form-check-label" for="female">
+						    女
+						  </label>
+						</div>
+						<div class="form-check col-sm-3">
+						  <input class="form-check-input" type="radio" name="sex" id="male" value="option1" checked>
+						  <label class="form-check-label" for="male">
+						    男
+						  </label>
+						</div>
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="phone" class="col-sm-2 col-form-label text-center">联系方式</label>
+				    <div class="col-sm-9">
+				      <input type="tel" class="form-control" id="phone" value="13269219270">
+				    </div>
+				  </div>
+				  <hr/>
+				  <div class="form-group row justify-content-sm-center">
+				  	 <img src="imgs/botton_gif_025.gif" class="col-auto">
+				 </div>
+		      	</form>
+		      </div>
+		      <div class="tab-pane fade pt-3 pb-3" id="search-order" role="tabpanel" aria-labelledby="list-search-order-list" style="background-color: #FCFDEF;">
+		      	<table class="table table-striped">
+				  <thead>
+				    <tr>
+				      <th class="table-info" scope="col">订单号</th>
+				      <th class="table-primary" scope="col">收件人</th>
+				      <th class="table-primary">订单时间</th>
+				      <th class="table-success">状态</th>
+				      <th class="table-info" scope="col">操作</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>6f591522-7a2a-4a31-899d-ef1181c72f5f</th>
+				      <td>madan</td>
+				      <td>2016-01-10</td>
+				      <td>未支付</td>
+				      <td><a href="#">查看</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+				    </tr>
+				    <tr>
+				      <td>6f591522-7a2a-4a31-899d-ef1181c72f5f</th>
+				      <td>madan</td>
+				      <td>2016-01-10</td>
+				      <td>未支付</td>
+				      <td><a href="#">查看</a>&nbsp;&nbsp;<a href="#">删除</a></td>
+				    </tr>
+				  </tbody>
+				</table>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- 右边 tab-pane 结束 -->
+		</div>
+		<!-- 正文 结束 -->
+	</div>
+	<!-- footer 开始 -->
+	<footer class="container-fluid bg-light" style="margin:10px 0px;">
+		<img src="imgs/logo.png" style="width: 200px;height:70px;padding-left: 50px;margin-right:20px;vertical-align: top;">
+		<div class="d-inline-block">
+			<p style="font-size: 20px;" class="text-secondary">contact us</p>
+			<p style="font-size: 15px;" class="text-black-50">COPYRIGHT 2016 © ItcastStore All Rights RESERVED.</p>
+		</div>
+	</footer>
+	<!-- footer 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>销售榜单</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body >
+	<div class="d-flex flex-column h-100">
+		<!-- 头部 开始 -->
+		<header class="container-fluid">
+			<img src="imgs/top_11.png" class="w-100" style="height: 80px;">
+		</header>
+		<!-- 头部 结束 -->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- 时间 开始 -->
+				<div class="col align-self-start"> 2019年7月13日 星期六</div>
+				<!-- 时间 结束 -->
+				<!-- 退出登录 开始 -->
+				<div class="col-sm-2 align-self-end">
+					<a href="#">退出登录</a>
+				</div>
+				<!-- 退出登录 结束 -->
+			</div>
+		</div>
+		<!-- 中间部分 开始 -->
+		<div class="container-fluid row flex-grow-1">
+			<!-- 左边菜单 开始 -->
+			<div class="col-2">
+			    <div class="list-group text-center list-group-flush" id="list-tab" role="tablist">
+			        <a class="list-group-item list-group-item-action list-group-item-light" id="list-change-info" data-toggle="list" href="#change-info" role="tab">商品管理</a>
+			        <a class="list-group-item list-group-item-action  list-group-item-light" id="list-search-order" data-toggle="list" href="#search-order" role="tab">销售表单</a>
+			        <a class="list-group-item list-group-item-action list-group-item-light" href="#">订单管理</a>
+			        <a class="list-group-item list-group-item-action list-group-item-light" href="#">公告管理</a>
+			    </div>
+			</div>
+			<!-- 左边菜单 结束 -->
+			<!-- 右边 开始 -->
+			<div class="col-sm-10">
+				<p class="bg-primary text-center">查询条件</p>
+				<form>
+					<div class="row">
+						<div class="form-group col-sm-6 row">
+						    <label for="year" class="col-sm-3 col-form-label text-center">年份</label>
+						    <div class="col-sm-9">
+						      <input type="text" class="form-control" id="year">
+						    </div>
+						</div>
+						<div class="form-group col-sm-6 row">
+						    <label for="month" class="col-sm-3 col-form-label text-center">月份</label>
+						    <select class="form-control col-sm-9" id="month">
+						      <option value="">请选择月份</option>
+						      <option value="1">1月</option>
+						      <option value="2">2月</option>
+						      <option value="3">3月</option>
+						      <option value="4">4月</option>
+						      <option value="5">5月</option>
+						      <option value="6">6月</option>
+						      <option value="7">7月</option>
+						      <option value="8">8月</option>
+						      <option value="9">9月</option>
+						      <option value="10">10月</option>
+						      <option value="11">11月</option>
+						      <option value="12">12月</option>
+						    </select>
+						</div>
+					</div>
+					<div class="row justify-content-end">
+						<button class="btn btn-secondary mr-3 mb-2">下载</button>
+						<button class="btn btn-secondary mr-3 mb-2">重置</button>
+					</div>
+				</form>
+			</div>
+			<!-- 右边 结束 -->
+		</div>
+		<!-- 中间部分 结束 -->
+		<!-- footer 开始 -->
+		<footer class="bg-success text-center">传智书城后台管理系统</footer>
+		<!-- footer 结束 -->
+	</div>	
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+</body>
+</html>
