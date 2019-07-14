@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>客户端首页</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- logo 开始 -->
+	<div class="container-fluid logoDiv d-flex flex-row justify-content-around align-items-center">
+		<div>
+			<img src="imgs/logo.png"></img>
+		</div>
+		<div>
+			<img src="imgs/cart.gif"></img>
+			<span>&nbsp;&nbsp;<a href="#">购物车</a></span>
+			<span>&nbsp;&nbsp;<a href="#">帮助中心</a></span>
+			<span>&nbsp;&nbsp;<a href="#">我的账户</a></span>
+			<span>&nbsp;&nbsp;<a href="#">新用户注册</a></span>
+		</div>
+	</div>
+	<!-- logo  结束 -->
+	<!-- nav  开始 -->
+	<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">导航栏</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">文学 <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">计算机</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">外语</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">经营</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">励志</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">社科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">学术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">少儿</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">艺术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">原版</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">科技</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">考试</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活百科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">全部商品目录</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="请输入书名" aria-label="Search">
+	      <button class="btn btn-success my-2 my-sm-0" type="submit">搜索</button>
+	    </form>
+	  </div>
+	</nav>
+	<!-- nav  结束 -->
+	<!-- 图片轮播 开始 -->
+	<div id="carouselExampleIndicators" class="container carousel slide indexCarousel" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img src="imgs/ad/index_ad0.jpg" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/ad/index_ad1.jpg" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/ad/index_ad2.jpg" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/ad/index_ad3.jpg" class="d-block w-100">
+	    </div>
+	    <div class="carousel-item">
+	      <img src="imgs/ad/index_ad4.jpg" class="d-block w-100">
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	<!-- 图片轮播 结束 -->
+	<!-- 公告板 和本周热卖 开始 -->
+	<div class="container showContent">
+		<div class="row">
+			<!-- 公告板 开始 -->
+			<div class="col-sm-7">
+				<img src="imgs/billboard.gif" class="w-100">
+				<div id="notice">
+					<span>尊敬的网上书城用户,为了让大家有更好的购物体验，3月25日起，当日达业务关小黑屋回炉升级！
+	具体开放时间请留意公告，感谢大家的支持与理解，祝大家购物愉快！</span><br/>
+					<span>3月23日</span>  <br/>
+					传智播客 网上书城系统管理部
+				</div>
+			</div>
+			<!-- 公告板 结束 -->
+			<!-- 本周热卖 开始 -->
+			<div class="col-sm-5">
+				<img src="imgs/hottitle.gif">
+				<div class="row col-12" style="height: 250px;" id="hotSellBooks">
+					<div class="col-6">
+						<a href="#"></a><img src="imgs/hotSell/宽容.jpg" class="w-100 h-75">
+						<p class="text-center text-justify"><a href="#">学会宽容</a></p>
+					</div>
+					<div class="col-6">
+						<a href="#"><img src="imgs/hotSell/java.png" class="w-100 h-75"></a>
+						<p class="text-center text-justify"><a href="#">Java基础入门</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- 本周热卖 结束 -->
+		</div>
+	</div>
+	<!-- 公告板 和本周热卖 结束 -->
+	<!-- footer 开始 -->
+	<footer class="container-fluid bg-light" style="margin:10px 0px;">
+		<img src="imgs/logo.png" style="width: 200px;height:70px;padding-left: 50px;margin-right:20px;vertical-align: top;">
+		<div class="d-inline-block">
+			<p style="font-size: 20px;" class="text-secondary">contact us</p>
+			<p style="font-size: 15px;" class="text-black-50">COPYRIGHT 2016 © ItcastStore All Rights RESERVED.</p>
+		</div>
+	</footer>
+	<!-- footer 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/layer/layer.js"></script>
+	<script type="text/javascript" src="../commenResources/js/comman.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			let noticeDiv = document.getElementById("notice");
+			getLatestNotice("/getNoticeData",noticeDiv);
+			let hotSellBooksDiv = document.getElementById("hotSellBooks");
+			getHotSellBooks("/getgetHotSellBooks",getHotSellBooksDiv);
+		});
+		function getLatestNotice(url,noticeDiv){
+			let result = sendMessageSync(url,{});
+			//如果传过来的对象为空
+			if(Object.getOwnPropertyName(result.data).length == 0){
+				console.log("后台传来的数据为空!");
+				return;
+			}
+			//TODO 处理后台的数据
+			let noticeContent;
+			let noticeData;    //TODO 转换一下格式
+			let htmlStr = "<span>" + noticeContent + "</span><br/>" + 
+					"<span>" + noticeData +"</span>  <br/>" + 
+					"传智播客 网上书城系统管理部";
+			noticeDiv.innerHTML = htmlStr;		
+		}
+
+		function getHotSellBooks(url,hotSellBooksDiv){
+			let result = sendMessageSync(url,{});
+			let htmlStr = "";
+			for(let i == 0; i < result.data.length; i++){
+				let hotSellBook = result.data[i];
+				htmlStr += "<div class='col-6'>" + 
+							"<a href='#'></a><img src=" + hotSellBook.imgurl + 
+							" class='w-100 h-75'>" +
+							"<p class='text-center text-justify'><a href='#'>" + hotSellBook.name +"</a></p>"
+						</div>"
+			}
+		}
+	</script>
+</body>
+</html>

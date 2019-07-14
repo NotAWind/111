@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>订单详情</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body >
+	<!-- 头部 开始 -->
+	<header class="container-fluid">
+		<img src="imgs/top_11.png" class="w-100" style="height: 80px;">
+	</header>
+	<!-- 头部 结束 -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- 时间 开始 -->
+			<div class="col align-self-start"> 2019年7月13日 星期六</div>
+			<!-- 时间 结束 -->
+			<!-- 退出登录 开始 -->
+			<div class="col-sm-2 align-self-end">
+				<a href="#">退出登录</a>
+			</div>
+			<!-- 退出登录 结束 -->
+		</div>
+	</div>
+	<!-- 中间部分 开始 -->
+	<div class="container-fluid row">
+		<!-- 左边菜单 开始 -->
+		<div class="col-2">
+		    <div class="list-group text-center list-group-flush" id="list-tab" role="tablist">
+		        <a class="list-group-item list-group-item-action list-group-item-light" id="list-change-info" data-toggle="list" href="#change-info" role="tab">商品管理</a>
+		        <a class="list-group-item list-group-item-action  list-group-item-light" id="list-search-order" data-toggle="list" href="#search-order" role="tab">销售表单</a>
+		        <a class="list-group-item list-group-item-action list-group-item-light" href="#">订单管理</a>
+		        <a class="list-group-item list-group-item-action list-group-item-light" href="#">公告管理</a>
+		    </div>
+		</div>
+		<!-- 左边菜单 结束 -->
+		<!-- 右边 开始 -->
+		<div class="col-sm-10">
+			<p class="bg-primary text-center">查询条件</p>
+			<!-- 订单详情表格 开始 -->
+			<table>
+				<tr>
+					<td></td><!-- 不加这个第一列会很小 应该是bootsrtap这一列默认是编号 -->
+					<td>订单编号:</td>
+					<td>19ef8119-2c6b-4fdc-9899-c9350c171d06</td>
+					<td>所属用户：</td>
+					<td>madan</td>
+				</tr>
+				<tr>
+				<td></td>
+					<td>收件人：</td>
+					<td>madan</td>
+					<td>联系电话：</td>
+					<td>13269219270</td>
+				</tr>
+				<tr>
+				<td></td>
+					<td>送货地址：</td>
+					<td>南昌市</td>
+					<td>总价：</td>
+					<td>25.0</td>
+				</tr>
+				<tr>
+				<td></td>
+					<td>下单时间：</td>
+					<td>2019-07-13</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>商品信息</td>
+					<td colspan="3">
+						<table class="table  table-bordered">
+							<thead>
+								<tr class="table-info">
+									<th>序号</th>
+									<th>商品</th>
+									<th>商品编号</th>
+									<th>商品名称</th>
+									<th>商品价格</th>
+									<th>购买数量</th>
+									<th>商品类别</th>
+									<th>商品描述</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td></td>
+									<td>3cdd01d2-95d4-4077-b512-ff4c3b340d6b</td>
+									<td>学会宽容	</td>
+									<td>25.0	</td>
+									<td>1</td>
+									<td>文学</td>
+									<td>该书阐述了宽容是一种智慧和力量，是对生命的洞悉，是成长的绿荫，更是家庭幸福的秘诀。常用宽容的眼光看世界，事业、家庭和友谊才能稳固和长久。</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<!-- 订单详情表格 结束 -->
+		</div>
+		<!-- 右边 结束 -->
+	</div>
+	<!-- 中间部分 结束 -->
+	<!-- footer 开始 -->
+	<footer class="bg-success text-center">传智书城后台管理系统</footer>
+	<!-- footer 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+</body>
+</html>
