@@ -5,13 +5,16 @@ import com.ncu.task1.bean.MD5;
 import com.ncu.task1.dto.UserListDto;
 import com.ncu.task1.dto.UserSimDto;
 import com.ncu.task1.entity.UserEntity;
+import com.ncu.task1.exception.DataCheckException;
 import com.ncu.task1.exception.ExistException;
 import com.ncu.task1.exception.UnauthorizedException;
 import com.ncu.task1.param.LoginParam;
 import com.ncu.task1.param.PageParam;
 import com.ncu.task1.param.RegisterParam;
+import com.ncu.task1.param.UpdateParam;
 import com.ncu.task1.repositoty.UserRepository;
 import com.ncu.task1.service.UserService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -80,6 +83,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * 分页显示用户
+     * @param pageParam
+     * @return
+     */
     public UserListDto listUser(PageParam pageParam){
         PageRequest pageRequest = PageRequest.of(pageParam.getPageNum()-1,pageParam.getPageLimit());
         Page<UserEntity> userEntityPage = userRepository.findAll(pageRequest);
@@ -98,4 +106,30 @@ public class UserServiceImpl implements UserService {
         return userListDto;
 
     }
+
+    /**
+     * 根据id删除用户
+     * @param id
+     * @throws Exception
+     */
+    public void delUser(int id) throws Exception{
+        userRepository.deleteById(id);
+    }
+
+    public void updateUser(UpdateParam updateParam) throws Exception{
+        UserEntity userEntity = userRepository.findByUsername(updateParam.getUsername());
+
+        //md5验证
+        String oldmd5 = MD5.md5(userEntity.getUsername(),updateParam.getOldPassword());
+        String newmd5 = MD5.md5(userEntity.getUsername(),updateParam.getNewPassword());
+
+        if (oldmd5 != newmd5){
+            throw new DataCheckException("旧密码错误");
+        }
+
+        userRepository.modifiedPassword(updateParam.getUsername(),updateParam.getOldPassword(),
+                updateParam.getNewPassword(),updateParam.getGender(),updateParam.getTelephone());
+
+    }
+
 }
