@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>支付银行</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- 支付表单 开始 -->
+	<form class="mt-3">
+		<div class="form-group row">
+		    <label for="orderId" class="col-sm-2 col-form-label text-center">订单号</label>
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control" id="orderId">
+		    </div>
+		</div>
+		<div class="form-group row">
+		    <label for="payupMoney" class="col-sm-2 col-form-label text-center">支付金额</label>
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control" id="payupMoney">
+		    </div>
+		</div>
+		<div class="form-group">
+		    <label class="col-sm-2 col-form-label text-center">选择网上银行</label>
+		    <!-- 第一行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="abc" value="abc" checked>
+				  <label class="form-check-label" for="abc">
+				    <img src="imgs/bank/abc.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="bc" value="bc">
+				  <label class="form-check-label" for="bc">
+				    <img src="imgs/bank/bc.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="bcc" value="bcc">
+				  <label class="form-check-label" for="bcc">
+				    <img src="imgs/bank/bcc.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="beijingnongshang" value="beijingnongshang">
+				  <label class="form-check-label" for="beijingnongshang">
+				    <img src="imgs/bank/beijingnongshang.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第一行银行 结束 -->
+			<!-- 第二行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="bh" value="bh">
+				  <label class="form-check-label" for="bh">
+				    <img src="imgs/bank/bh.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="bj" value="bj">
+				  <label class="form-check-label" for="bj">
+				    <img src="imgs/bank/bj.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="ccb" value="ccb">
+				  <label class="form-check-label" for="ccb">
+				    <img src="imgs/bank/ccb.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="cib" value="cib">
+				  <label class="form-check-label" for="cib">
+				    <img src="imgs/bank/cib.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第二行银行 结束 -->	
+			<!-- 第三行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="cmb" value="cmb">
+				  <label class="form-check-label" for="cmb">
+				    <img src="imgs/bank/cmb.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="cmbc" value="cmbc">
+				  <label class="form-check-label" for="cmbc">
+				    <img src="imgs/bank/cmbc.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="dy" value="dy">
+				  <label class="form-check-label" for="dy">
+				    <img src="imgs/bank/dy.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="gf" value="gf">
+				  <label class="form-check-label" for="gf">
+				    <img src="imgs/bank/gf.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第三行银行 结束 -->	
+			<!-- 第四行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="guangda" value="guangda">
+				  <label class="form-check-label" for="guangda">
+				    <img src="imgs/bank/guangda.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="hx" value="hx">
+				  <label class="form-check-label" for="hx">
+				    <img src="imgs/bank/hx.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="icbc" value="icbc">
+				  <label class="form-check-label" for="icbc">
+				    <img src="imgs/bank/icbc.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="nanjing" value="nanjing">
+				  <label class="form-check-label" for="nanjing">
+				    <img src="imgs/bank/nanjing.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第四行银行 结束 -->	
+			<!-- 第五行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="ningbo" value="ningbo">
+				  <label class="form-check-label" for="ningbo">
+				    <img src="imgs/bank/ningbo.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="pingan" value="pingan">
+				  <label class="form-check-label" for="pingan">
+				    <img src="imgs/bank/pingan.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="post" value="post">
+				  <label class="form-check-label" for="post">
+				    <img src="imgs/bank/post.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="sfz" value="sfz">
+				  <label class="form-check-label" for="sfz">
+				    <img src="imgs/bank/sfz.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第五行银行 结束 -->	
+			<!-- 第六行银行 开始 -->
+		    <div class="row">
+		        <div class="form-check col-sm-2 offset-sm-2 mb-3">
+				  <input class="form-check-input" type="radio" name="bank" id="sh" value="sh">
+				  <label class="form-check-label" for="sh">
+				    <img src="imgs/bank/sh.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="shpd" value="shpd">
+				  <label class="form-check-label" for="shpd">
+				    <img src="imgs/bank/shpd.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="zheshang" value="zheshang">
+				  <label class="form-check-label" for="zheshang">
+				    <img src="imgs/bank/zheshang.bmp">
+				  </label>
+				</div>
+				<div class="form-check col-sm-2">
+				  <input class="form-check-input" type="radio" name="bank" id="zx" value="zx">
+				  <label class="form-check-label" for="zx">
+				    <img src="imgs/bank/zx.bmp">
+				  </label>
+				</div>
+		    </div>
+			<!-- 第六行银行 结束 -->			
+		  </div>
+		  <div class="col-sm-2 offset-sm-5"><button class="btn btn-secondary">确定支付</button></div>
+	</form>
+	<!-- 支付表单 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+</body>
+</html>

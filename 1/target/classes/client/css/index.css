@@ -1,0 +1,16 @@
+.logoDiv{
+	height: 100px;
+}
+.indexCarousel{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.indexCarousel img{
+	height: 400px;
+}
+.showContent{
+	background-color: #FCFDEF;
+}
+.themeBgColor{
+	background-color: #FCFDEF;
+}

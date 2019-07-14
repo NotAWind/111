@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- logo 开始 -->
+	<div class="container-fluid logoDiv d-flex flex-row justify-content-around align-items-center">
+		<div>
+			<img src="imgs/logo.png"></img>
+		</div>
+		<div>
+			<img src="imgs/cart.gif"></img>
+			<span>&nbsp;&nbsp;<a href="#">购物车</a></span>
+			<span>&nbsp;&nbsp;<a href="#">帮助中心</a></span>
+			<span>&nbsp;&nbsp;<a href="#">我的账户</a></span>
+			<span>&nbsp;&nbsp;<a href="#">新用户注册</a></span>
+		</div>
+	</div>
+	<!-- logo  结束 -->
+	<!-- nav  开始 -->
+	<nav class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">导航栏</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">文学 <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">计算机</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">外语</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">经营</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">励志</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">社科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">学术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">少儿</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">艺术</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">原版</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">科技</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">考试</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">生活百科</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">全部商品目录</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="search" placeholder="请输入书名" aria-label="Search">
+	      <button class="btn btn-success my-2 my-sm-0" type="submit">搜索</button>
+	    </form>
+	  </div>
+	</nav>
+	<!-- nav  结束 -->
+	<div class="container" style="background-color: #FCFDEF;padding: 20px;">
+		<form>
+		  <B>新用户注册</B>
+		  <div class="form-group row">
+		    <label for="email" class="col-sm-2 col-form-label text-center">邮箱</label>
+		    <div class="col-sm-4">
+		      <input type="email" class="form-control" id="email">
+		    </div>
+		    <div class="col-sm-6">
+		    	<small id="emailHelpInline" class="text-muted">
+			      请输入有效的邮箱地址
+			    </small>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="userName" class="col-sm-2 col-form-label text-center">用户名</label>
+		    <div class="col-sm-4">
+		      <input type="text" class="form-control" id="userName">
+		    </div>
+		    <div class="col-sm-6">
+		    	<small id="userNameHelpInline" class="text-muted">
+			      字母数字下划线1到10位, 不能是数字开头
+			    </small>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="password" class="col-sm-2 col-form-label text-center">密码</label>
+		    <div class="col-sm-4">
+		      <input type="password"  class="form-control" id="password">
+		    </div>
+		    <div class="col-sm-6">
+		    	<small id="passwordHelpInline" class="text-muted">
+			      密码请设置6-16位字符
+			    </small>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="conformPassword" class="col-sm-2 col-form-label text-center">重复密码</label>
+		    <div class="col-sm-4">
+		      <input type="password" class="form-control" id="conformPassword">
+		    </div>
+		    <div class="col-sm-6">
+		    	<small id="conformPasswordHelpInline" class="text-muted">
+			    </small>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label class="col-sm-2 col-form-label text-center">性别</label>
+		    <div class="col-sm-9 row">
+		      <div class="form-check col-sm-3">
+				  <input class="form-check-input" type="radio" name="sex" id="female" value="option1" checked>
+				  <label class="form-check-label" for="female">
+				    女
+				  </label>
+				</div>
+				<div class="form-check col-sm-3">
+				  <input class="form-check-input" type="radio" name="sex" id="male" value="option1">
+				  <label class="form-check-label" for="male">
+				    男
+				  </label>
+				</div>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="phone" class="col-sm-2 col-form-label text-center">联系电话</label>
+		    <div class="col-sm-4">
+		      <input type="tel" class="form-control" id="phone">
+		    </div>
+		    <div class="col-sm-6">
+		    	<small id="conformPasswordHelpInline" class="text-muted">
+		    	请输入合法的手机号码
+			    </small>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label for="selfIntroduction" class="col-sm-2 col-form-label text-center">个人介绍</label>
+		    <div class="col-sm-9">
+		    	<textarea rows="4" placeholder="随便介绍一下自己呗。。。" id="selfIntroduction" class="form-control"></textarea>
+		    </div>
+		  </div>
+		<hr/>
+		<B>注册验证</B>
+		<div class="form-group row">
+		    <label for="phone" class="col-sm-2 col-form-label text-center">输入验证码</label>
+		    <div class="col-sm-9">
+		      <input type="text" class="form-control" id="phone">
+		    </div>
+		 </div>
+		 <div class="form-group row justify-content-sm-center">
+		  	 <img src="imgs/signup.gif" id="signup" class="col-auto">
+		 </div>
+		</form>
+		<hr/>
+	</div>
+	<!-- footer 开始 -->
+	<footer class="container-fluid bg-light" style="margin:10px 0px;">
+		<img src="imgs/logo.png" style="width: 200px;height:70px;padding-left: 50px;margin-right:20px;vertical-align: top;">
+		<div class="d-inline-block">
+			<p style="font-size: 20px;" class="text-secondary">contact us</p>
+			<p style="font-size: 15px;" class="text-black-50">COPYRIGHT 2016 © ItcastStore All Rights RESERVED.</p>
+		</div>
+	</footer>
+	<!-- footer 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		// 验证注册信息格式是否正确
+		function registerValidate(){
+			let emialRegExp = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			let userNameRegExp = /^[a-zA-Z][0-9a-zA-Z]{0,9}$/;
+			let passwordRegExp = /^.{6,16}$/;
+			let phoneRegExp = /^1[345789]\d{9}$/;
+			// 验证邮箱格式
+			let emailInput = document.getElementById("email");
+			let emailHelpInline = document.getElementById("emailHelpInline");
+			emailInput.oninput = function(){
+				// 格式如果正确
+				if(emialRegExp.test(this.value)){
+					emailInput.setAttribute("class","is-valid form-control");
+					emailHelpInline.innerHTML = "输入合法";
+					emailHelpInline.setAttribute("class","text-success");
+				}else{
+					emailInput.setAttribute("class","is-invalid form-control");
+					emailHelpInline.innerHTML = "请输入有效的邮箱地址";
+					emailHelpInline.setAttribute("class","text-danger");
+				}
+			};
+			// 验证用户名
+			let userNameInput = document.getElementById("userName");
+			let userNameHelpInline = document.getElementById("userNameHelpInline");
+			userNameInput.oninput = function(){
+				// 格式如果正确
+				if(userNameRegExp.test(this.value)){
+					userNameInput.setAttribute("class","is-valid form-control");
+					userNameHelpInline.innerHTML = "输入合法";
+					userNameHelpInline.setAttribute("class","text-success");
+				}else{
+					userNameInput.setAttribute("class","is-invalid form-control");
+					userNameHelpInline.innerHTML = "字母数字下划线1到10位, 不能是数字开头";
+					userNameHelpInline.setAttribute("class","text-danger");
+				}
+			};
+			//验证密码格式
+			let passwordInput = document.getElementById("password");
+			let passwordHelpInline = document.getElementById("passwordHelpInline");
+			passwordInput.oninput = function(){
+				// 格式如果正确
+				if(passwordRegExp.test(this.value)){
+					passwordInput.setAttribute("class","is-valid form-control");
+					passwordHelpInline.innerHTML = "输入合法";
+					passwordHelpInline.setAttribute("class","text-success");
+				}else{
+					passwordInput.setAttribute("class","is-invalid form-control");
+					passwordHelpInline.innerHTML = "密码请设置6-16位字符";
+					passwordHelpInline.setAttribute("class","text-danger");
+				}
+			};
+			//验证2次密码输入是否一致
+			let conformPasswordInput = document.getElementById("conformPassword");
+			let conformPasswordHelpInline = document.getElementById("conformPasswordHelpInline");
+			conformPasswordInput.oninput = function(){
+				// 格式如果正确
+				if(this.value == document.getElementById("password").value){
+					conformPasswordInput.setAttribute("class","is-valid form-control");
+					conformPasswordHelpInline.innerHTML = "输入合法";
+					conformPasswordHelpInline.setAttribute("class","text-success");
+				}else{
+					conformPasswordInput.setAttribute("class","is-invalid form-control");
+					conformPasswordHelpInline.innerHTML = "2次密码不一致";
+					conformPasswordHelpInline.setAttribute("class","text-danger");
+				}
+			};
+			//验证手机号格式
+			let phoneInput = document.getElementById("phone");
+			let phoneHelpInline = document.getElementById("phoneHelpInline");
+			phoneInput.oninput = function(){
+				// 格式如果正确
+				if(phoneRegExp.test(this.value)){
+					phoneInput.setAttribute("class","is-valid form-control");
+					phoneHelpInline.innerHTML = "输入合法";
+					phoneHelpInline.setAttribute("class","text-success");
+				}else{
+					phoneInput.setAttribute("class","is-invalid form-control");
+					phoneHelpInline.innerHTML = "请输入有效的手机号码";
+					phoneHelpInline.setAttribute("class","text-danger");
+				}
+			};
+		}
+		$(function(){
+			registerValidate();
+		});
+	</script>
+</body>
+</html>

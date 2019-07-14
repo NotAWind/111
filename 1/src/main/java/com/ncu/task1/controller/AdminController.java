@@ -35,4 +35,9 @@ public class AdminController {
 
 
     
+
+    @RequestMapping("/indexPages")
+    public String indexPages(){
+        return "admin/index";
+    }
 }

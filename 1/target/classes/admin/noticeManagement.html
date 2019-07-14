@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>公告管理</title>
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../commenResources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body >
+	<!-- 头部 开始 -->
+	<header class="container-fluid">
+		<img src="imgs/top_11.png" class="w-100" style="height: 80px;">
+	</header>
+	<!-- 头部 结束 -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- 时间 开始 -->
+			<div class="col align-self-start"> 2019年7月13日 星期六</div>
+			<!-- 时间 结束 -->
+			<!-- 退出登录 开始 -->
+			<div class="col-sm-2 align-self-end">
+				<a href="#">退出登录</a>
+			</div>
+			<!-- 退出登录 结束 -->
+		</div>
+	</div>
+	<!-- 中间部分 开始 -->
+	<div class="container-fluid row">
+		<!-- 左边菜单 开始 -->
+		<div class="col-2">
+		    <div class="list-group text-center list-group-flush" id="list-tab" role="tablist">
+		        <a class="list-group-item list-group-item-action list-group-item-light" id="list-change-info" data-toggle="list" href="#change-info" role="tab">商品管理</a>
+		        <a class="list-group-item list-group-item-action  list-group-item-light" id="list-search-order" data-toggle="list" href="#search-order" role="tab">销售表单</a>
+		        <a class="list-group-item list-group-item-action list-group-item-light" href="#">订单管理</a>
+		        <a class="list-group-item list-group-item-action list-group-item-light" href="#">公告管理</a>
+		    </div>
+		</div>
+		<!-- 左边菜单 结束 -->
+		<!-- 右边 开始 -->
+		<div class="col-sm-10">
+			<p class="bg-primary text-center">公告列表</p>
+			<div class="row justify-content-end">
+				<button class="btn btn-secondary mr-3 mb-2">添加</button>
+			</div>
+			<!-- 公告列表表格 开始 -->
+			<table class="table table-bordered">
+			  <thead>
+			    <tr class="table-info">
+			      <th scope="col">公告编号</th>
+			      <th scope="col">公告标题</th>
+			      <th scope="col">公告内容</th>
+			      <th scope="col">时间</th>
+			      <th scope="col">编辑</th>
+			      <th scope="col">删除</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th>2</th>
+			      <td>年货礼包兑换时间通知</td>
+			      <td>尊敬的网上书城用户： 非常抱歉，因为年后部分供应商工厂开工较晚，导致个别商品到货延迟。 基于此，15年年货礼包的兑换入口会延期到3月17日，请您在有效期内完成兑换。 以下礼包预计本周四，即3月12日到货。造成不便深表歉意，敬请谅解。</td>
+			      <td>20160111113411</td>
+			      <td><a href="#"><img src="imgs/i_edit.gif"></a></td>
+			      <td><a href="#"><img src="imgs/icon-delete.gif"></a></td>
+			    </tr>
+			  </tbody>
+			</table>
+			<!-- 公告列表表格 结束 -->
+		</div>
+		<!-- 右边 结束 -->
+	</div>
+	<!-- 中间部分 结束 -->
+	<!-- footer 开始 -->
+	<footer class="bg-success text-center">传智书城后台管理系统</footer>
+	<!-- footer 结束 -->
+	<script type="text/javascript" src="../commenResources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/popper.min.js"></script>
+	<script type="text/javascript" src="../commenResources/js/bootstrap.min.js"></script>
+</body>
+</html>

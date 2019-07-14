@@ -9,6 +9,10 @@ import com.ncu.task1.repositoty.UserRepository;
 import com.ncu.task1.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
+import org.springframework.stereotype.Controller;
+import org.springframework.util.ClassUtils;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author 周佳玲
  * @date 2019-07-13 13:54
  */
-@RestController
+@Controller
 @Slf4j
 @RequestMapping("/web")
 public class WebController {
@@ -48,6 +52,10 @@ public class WebController {
         return JsonData.success(userEntity.getRole());
     }
 
+    @RequestMapping("/loginPage")
+    public String indexPage(){
+        return "hello";
+    }
 
 
 

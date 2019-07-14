@@ -1,7 +1,7 @@
 package com.ncu.task1.entity;
 
 import lombok.*;
-import sun.util.resources.LocaleData;
+//import sun.util.resources.LocaleData;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
